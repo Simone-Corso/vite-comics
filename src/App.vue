@@ -1,11 +1,13 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
-<template>
-  
+<template lang="">
+  <div>
+      
+  </div>
 </template>
-
-<style>
-
+<script>
+export default {
+  
+}
+</script>
+<style lang="">
+  
 </style>

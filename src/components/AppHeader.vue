@@ -1,6 +1,8 @@
 <template lang="">
+
+<header>
     <nav class="menu">
-        <article>
+    <article>
             <ul>
                 <li>characters</li>
                 <li>comics</li>
@@ -15,14 +17,24 @@
             </ul>
         </article>
     </nav>
+
+</header>
+     
 </template>
 <script>
+
+import AppMenu from './AppMenu.vue';
+
 export default {
     name: 'AppHeader',
+    components: {
+        AppMenu,
+    }
     
 }
 </script>
 <style lang="scss" scoped>
+
 
 ul{
     list-style-type: none;
@@ -33,6 +45,7 @@ ul{
 
 li{
     margin-right: 2rem;
+    font-size: 20px;
    
 }
 
@@ -42,7 +55,6 @@ article{
     align-items: center;
     margin-top: 1rem;
 }
-
 
     
 </style>

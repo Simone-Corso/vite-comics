@@ -1,15 +1,15 @@
 <template lang="">
-    <div>
-        <h1>
-            ciao
-        </h1>
-    </div>
+    <nav class="menu">
+        <article>
+            
+        </article>
+    </nav>
 </template>
 <script>
 export default {
     
 }
 </script>
-<style lang="">
+<style lang="scss" scoped>
     
 </style>

@@ -1,9 +1,5 @@
 <template lang="">
-  <div>
-  </AppHeader>
-  </AppMain>
-  </AppFooter>
-  </div>
+  
 </template>
 <script>
 

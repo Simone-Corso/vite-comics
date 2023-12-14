@@ -1,5 +1,8 @@
 <template lang="">
-  
+  <AppFooter>
+<AppHeader>
+<AppMain>
+
 </template>
 <script>
 

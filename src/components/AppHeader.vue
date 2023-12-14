@@ -18,6 +18,7 @@
 </template>
 <script>
 export default {
+    name: 'AppHeader',
     
 }
 </script>
@@ -25,6 +26,12 @@ export default {
 
 ul{
     list-style-type: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

@@ -1,6 +1,8 @@
 <template lang="">
     <div>
-        
+        <h1>
+            buongiorno
+        </h1>
     </div>
 </template>
 <script>

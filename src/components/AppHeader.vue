@@ -26,12 +26,21 @@ export default {
 
 ul{
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-nav{
+li{
+    margin-right: 2rem;
+   
+}
+
+article{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 
 

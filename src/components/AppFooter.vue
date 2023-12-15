@@ -56,7 +56,23 @@
        </div>
     </div>
        <div class="footer-end">
-        ciao
+        <button>
+            <P>sign-up now!</P>
+        </button>
+        <div class="icon">
+            <article>
+                <h3>
+                    FOLLOW US
+                </h3>
+            </article>
+            <article>
+            </article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+
+        </div>
        </div>
     </footer>
 </template>
@@ -103,8 +119,21 @@ h2{
 }
 
 .footer-end{
-    background-color: #1C1C1C;
+    background-color: #303030;
     height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background-color: #303030;
+    color: white;
+    border: 2px solid #0C7CEC;
+}
+
+h3{
+    color: #0C7CEC;
 }
 
 

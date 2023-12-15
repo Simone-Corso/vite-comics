@@ -49,6 +49,14 @@
         <li>DC Universe</li>
         <li>DC Power Visa</li>  
     </ul>
+    <div class="container-bg">
+    <div class="bg-logo">
+        <img src="../assets/img/dc-logo-bg.png" alt="">
+       </div>
+       </div>
+    </div>
+       <div class="footer-end">
+        ciao
        </div>
     </footer>
 </template>
@@ -85,6 +93,15 @@ h2{
     color: white;
     font-size: 20px;
 }
+.container-bg{
+    display: flex;
+    justify-content: flex-end; 
+    width: 55%; 
+}
+.bg-logo {
+    margin-left: auto;
+}
+
 
     
 </style>

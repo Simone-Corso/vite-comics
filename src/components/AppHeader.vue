@@ -36,6 +36,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+
+
 header{
     display: flex;
     justify-content: space-around;

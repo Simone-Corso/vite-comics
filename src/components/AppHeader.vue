@@ -1,6 +1,7 @@
 <template lang="">
 
 <header>
+    <img src="../assets/img/dc-logo.png" alt="">
     <nav class="menu">
     <article>
             <ul>
@@ -34,6 +35,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 ul{

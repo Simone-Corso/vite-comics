@@ -1,15 +1,19 @@
 <template lang="">
-    <div>
-        <h1>
-            buongiorno
-        </h1>
-    </div>
+    <main>
+
+    </main>
 </template>
 <script>
 export default {
     
 }
 </script>
-<style lang="">
+<style lang="scss" scoped>
+
+main {
+    background: #1C1C1C;
+    height: 150px;
+    
+}
     
 </style>

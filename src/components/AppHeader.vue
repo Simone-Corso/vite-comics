@@ -40,6 +40,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 
@@ -62,6 +63,7 @@ article{
     align-items: center;
     margin-top: 1rem;
 }
+
 
     
 </style>

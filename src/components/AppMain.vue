@@ -1,17 +1,20 @@
 <template lang="">
     <main>
-        <CardsEl v-for="cards in CardsEl"
-        
-        
-        />
-        <div class="container-cards">
-
-        </div>
+        <section class='cards'>
+        <article>
+            <h2>
+                ciao
+            </h2>
+        </article>
+    </section>
 
     </main>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
+    name: 'cards',
     data(){
         return{
 
@@ -88,34 +91,17 @@ export default {
       series: "Catwoman",
       type: "graphic novel",
   },
-]
-
+],
     
         }
     },
-    components: { 
-        
-        CardsEl
-    
-}
 }
 </script>
 <style lang="scss" scoped>
 
 main {
     background: #1C1C1C;
-    height: 150px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    
+
 }
 
-
-.container-cards{
-    
-}
-
-    
 </style>

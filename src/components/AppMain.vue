@@ -1,5 +1,9 @@
 <template lang="">
     <main>
+        <CardsEl v-for="cards in CardsEl"
+        
+        
+        />
         <div class="container-cards">
 
         </div>

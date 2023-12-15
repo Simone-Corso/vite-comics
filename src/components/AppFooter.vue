@@ -102,6 +102,11 @@ h2{
     margin-left: auto;
 }
 
+.footer-end{
+    background-color: #1C1C1C;
+    height: 150px;
+}
+
 
     
 </style>

@@ -88,8 +88,12 @@ export default {
 
     
         }
-    }
+    },
+    components: { 
+        
+        CardsEl
     
+}
 }
 </script>
 <style lang="scss" scoped>
@@ -104,6 +108,10 @@ main {
     
 }
 
+
+.container-cards{
+    
+}
 
     
 </style>

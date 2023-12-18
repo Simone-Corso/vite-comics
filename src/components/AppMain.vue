@@ -14,11 +14,9 @@
             </section>
         </div>
         <div class="button-center">
-            <section>
-                <button>
-                    
-                </button>
-            </section>
+        <button>
+            <P>sign-up now!</P>
+        </button>
         </div>
     </main>
 </template>
@@ -147,6 +145,11 @@ article {
 img {
     width: 100%;
     height: 50%;
+}
+
+.button-center{
+    display: flex;
+    justify-content: center;
 }
 
 h2{

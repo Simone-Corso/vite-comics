@@ -66,6 +66,9 @@ article{
     margin-top: 1rem;
 }
 
+img{
+    margin-left: 10rem;
+}
 
     
 </style>

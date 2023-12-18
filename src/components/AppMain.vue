@@ -1,14 +1,23 @@
 <template lang="">
     <main>
-        <section class='image-color'>
-            <img src="../assets/img/jumbotron.jpg" alt="">
-        </section>
+        <div class="jumbtron">
+            <section>
+                <img class='image-jumbtron' src="../assets/img/jumbotron.jpg" alt="">
+            </section>
+        </div>
         <div class='container-image'>
             <section class='cards-row'>
                 <article v-for='card in cards' :key='card.series'>
                     <img :src="card.thumb" alt="Card Image">
                     <h2>{{card.series}}</h2>
                 </article>
+            </section>
+        </div>
+        <div class="button-center">
+            <section>
+                <button>
+                    
+                </button>
             </section>
         </div>
     </main>
@@ -121,15 +130,23 @@ height: 20px50px;
     margin-top: 20px; 
 }
 
-article {
-    flex: 0 0 calc(25% - 20px);
-    margin: 10px; 
-    box-sizing: border-box; 
+.image-jumbtron{
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
 }
 
+article {
+    flex: calc(( 100% / 7) - .3rem);
+    margin: 10px; 
+    box-sizing: border-box; 
+    margin-bottom: -5rem;
+}
+
+
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 50%;
 }
 
 h2{

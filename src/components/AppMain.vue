@@ -1,13 +1,16 @@
 <template lang="">
     <main>
-        <section class='cards'>
-        <article>
-            <h2>
-                ciao
-            </h2>
-        </article>
-    </section>
-
+        <section class='image-color'>
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </section>
+        <div class='container-image'>
+            <section class='cards-row'>
+                <article v-for='card in cards' :key='card.series'>
+                    <img :src="card.thumb" alt="Card Image">
+                    <h2>{{card.series}}</h2>
+                </article>
+            </section>
+        </div>
     </main>
 </template>
 <script>
@@ -98,10 +101,38 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
 main {
     background: #1C1C1C;
-
 }
 
+.sectionimage-color{
+height: 20px50px;
+}
+.container-image {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    max-width: 1200px; 
+    margin-top: 20px; 
+}
+
+article {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    color: white;
+}
 </style>

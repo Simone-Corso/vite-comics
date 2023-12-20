@@ -97,7 +97,7 @@ export default {
 
 img{
     width: 100%;
-    height: 450px;
+    height: auto;
 }
 
 ul{
@@ -135,7 +135,6 @@ button{
 h3{
     color: #0C7CEC;
 }
-
 
     
 </style>

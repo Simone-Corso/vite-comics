@@ -7,10 +7,7 @@
         </div>
         <div class='container-image'>
             <section class='cards-row'>
-                <article v-for='card in cards' :key='card.series'>
-                    <img :src="card.thumb" alt="Card Image">
-                    <h2>{{card.series}}</h2>
-                </article>
+                <Cards :cards="cards" />
             </section>
         </div>
         <div class="button-center">
@@ -21,10 +18,12 @@
     </main>
 </template>
 <script>
-import axios from 'axios';
+import Cards from './AppCards.vue';
 
 export default {
-    name: 'cards',
+    components: {
+        Cards,
+    },
     data(){
         return{
 
@@ -107,25 +106,11 @@ export default {
     },
 }
 </script>
+
+
 <style lang="scss" scoped>
 main {
     background: #1C1C1C;
-}
-
-.sectionimage-color{
-height: 20px50px;
-}
-.container-image {
-    display: flex;
-    justify-content: center;
-}
-
-.cards-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    max-width: 1200px; 
-    margin-top: 20px; 
 }
 
 .image-jumbtron{
@@ -134,25 +119,40 @@ height: 20px50px;
     object-position: top;
 }
 
-article {
-    flex: calc(( 100% / 7) - .3rem);
-    margin: 10px; 
-    box-sizing: border-box; 
-    margin-bottom: -5rem;
-}
-
-
-img {
-    width: 100%;
-    height: 50%;
-}
-
-.button-center{
+.button-center {
     display: flex;
     justify-content: center;
 }
 
-h2{
+button {
+    margin-bottom: 2rem;
+}
+
+h2 {
     color: white;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+article {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    box-sizing: border-box; 
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 </style>

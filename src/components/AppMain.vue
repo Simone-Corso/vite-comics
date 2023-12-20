@@ -5,8 +5,8 @@
                 <img class='image-jumbtron' src="../assets/img/jumbotron.jpg" alt="">
             </section>
         </div>
-        <div class='container-image'>
-            <section class='cards-row'>
+        <div class='container-row'>
+            <section>
                 <Cards :cards="cards" />
             </section>
         </div>
@@ -132,23 +132,8 @@ h2 {
     color: white;
 }
 
-.container-image {
-    display: flex;
-    justify-content: center;
-}
+.container-row{
 
-.cards-row {
-    display: flex;
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
-    max-width: 100%;
-    margin-top: 20px;
-}
-
-article {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    box-sizing: border-box; 
 }
 
 img {
